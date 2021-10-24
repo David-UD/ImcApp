@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImcApp.MainPage">
+
+    <StackLayout>
+        <Frame Margin="16" CornerRadius="0" BorderColor="LightGray">
+            <StackLayout>
+                <Label Text="Proporcione el peso de la persona en kilogramos:" 
+                       TextColor="LightGray" FontSize="Medium"/>
+                <Entry FontSize="Medium"
+                       x:Name="PesoEntry"/>
+                <Label Text="Proporcione la estatura de la persona en metros" 
+                       TextColor="LightGray" FontSize="Medium"/>
+                <Entry FontSize="Medium" x:Name="EstaturaEntry"/>
+            </StackLayout>
+        </Frame>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button Text="Calcular" FontSize="Medium"
+                    WidthRequest="130"
+                    x:Name="CalcularButton"
+                    Clicked="CalcularButton_Clicked"/>
+            <Button Text="Limpiar" FontSize="Medium"
+                    WidthRequest="130"
+                    x:Name="LimpiarButton"
+                    Clicked="LimpiarButton_Clicked"/>
+        </StackLayout>
+        <Frame Margin="16" CornerRadius="0" BorderColor="LightGray">
+            <StackLayout>
+                <Label Text="El indice de masa corporal de la persona es:" 
+                       FontSize="Medium"/>
+                <Label Text="23.4567" FontSize="36"
+                       HorizontalOptions="Center"
+                       x:Name="imcLabel"/>
+                <Label Text="La situación nutricional de la persona es:" 
+                       FontSize="Medium"/>
+                <Label Text="Peso Normal" FontSize="36"
+                       HorizontalOptions="Center"
+                       x:Name="situacionNutricionalLabel"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
