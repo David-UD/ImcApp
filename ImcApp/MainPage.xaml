@@ -7,11 +7,11 @@
         <Frame Margin="16" CornerRadius="0" BorderColor="LightGray">
             <StackLayout>
                 <Label Text="Proporcione el peso de la persona en kilogramos:" 
-                       TextColor="LightGray" FontSize="Medium"/>
+                       FontSize="Medium"/>
                 <Entry FontSize="Medium"
                        x:Name="PesoEntry"/>
                 <Label Text="Proporcione la estatura de la persona en metros" 
-                       TextColor="LightGray" FontSize="Medium"/>
+                       FontSize="Medium"/>
                 <Entry FontSize="Medium" x:Name="EstaturaEntry"/>
             </StackLayout>
         </Frame>
